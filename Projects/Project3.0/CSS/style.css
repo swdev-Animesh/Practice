@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #e5fdd1;
-  height: 7vh;
+  height: 6%;
   width: 100%;
   position: fixed;
   align-content: center;
@@ -106,36 +106,14 @@ li {
 #project-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: space-between;
   align-item: space-between;
 }
 
-.project-item {
+.project-item-1 {
   width: 30%;
-  height: 60vh;
-  border-radius: 10%;
-  border: 1px solid black;
-  background-color: #e5fdd1;
-  text-align: center;
-  overflow: hidden;
-}
-.project-img {
-  display: inline-block;
-  width: 60%;
-  text-align: center;
-}
-.project-info {
-  margin-top: 8vh;
-}
-.project-info:hover {
-  margin-top: 0;
-}
-.button {
-  background-color: pink;
-  border-radius: 10%;
-  border: 1px solid white;
-}
-.button:hover {
-  background-color: white;
+  height: 40%;
+  background-image: url("images/admin-panel.png");
+  background-size: 100px;
 }
