@@ -1,0 +1,155 @@
+body {
+  background-color: black;
+}
+
+.nav-bar {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.nav-item {
+  color: white;
+  padding: 15px;
+  margin: 0 10px;
+}
+.nav-item:hover {
+  color: black;
+  background-color: white;
+}
+
+.landing {
+  display: flex;
+  background-color: rgb(47, 45, 45);
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.landing-img-div {
+  margin-top: 5vh;
+  text-align: center;
+}
+.landing-img {
+  display: inline-block;
+  width: 80%;
+}
+.professional-logo {
+  font-size: xx-large;
+  color: white;
+  width: 30%;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .professional-logo {
+    margin-top: 0;
+    width: 80%;
+  }
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+.landing-2 {
+  display: flex;
+  background-color: rgb(47, 45, 45);
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 5vh auto;
+  border: 1px solid gray;
+  box-shadow: 10px 15px 5px rgb(68, 138, 200), -13px -15px 5px rgb(82, 75, 213);
+  padding: 2vw 5vh;
+  text-align: center;
+}
+.professional-logo-2 {
+  font-size: xx-large;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .professional-logo-2 {
+    margin-top: 0;
+    width: 90%;
+  }
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.project-item-1 {
+  width: 400px;
+  margin: 2vh auto;
+  background-image: url("../Images/house.png");
+  background-color: rgb(135, 192, 241);
+  background-size: cover;
+  height: 400px;
+  border: 2px white solid;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project-info {
+  font-size: large;
+  border: 2px solid aqua;
+  color: black;
+  border-radius: 10px;
+  width: 360px;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  padding: 20px;
+  top: 85%;
+  transition-property: top;
+  transition-duration: 0.3s;
+}
+
+.project-info:hover {
+  top: 60%;
+}
+
+.project-item-2 {
+  width: 400px;
+  margin: 2vh auto;
+  background-image: url("../Images/code.png");
+  background-color: rgb(135, 192, 241);
+  background-size: cover;
+  height: 400px;
+  border: 2px white solid;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.contact {
+  width: 100%;
+  background-color: rgb(109, 113, 116);
+  padding: 5vh 2vw;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
+label {
+  color: white;
+}
+input {
+  border-radius: 5px;
+}
