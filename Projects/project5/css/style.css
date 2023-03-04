@@ -164,7 +164,7 @@ input {
 
   .middle-para{
     margin:10vh auto;
-    font-size:xx-large;
+    font-size:x-large;
     text-align:center;
     color:black;
     width:50%;
@@ -198,7 +198,7 @@ input {
   .mid-2{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-evenly;
+    justify-content:center;
   }
   .mid-img{
     margin:10px;
@@ -213,61 +213,21 @@ input {
     flex-direction:column;
     justify-content:center;
     gap:10vh;
-    margin-top:5vh;
+    margin:5vh 3vw;
 }
   .text-container{
     text-align:center;
+    color: #555555;
     font-size:x-large;
-    box-shadow:2px 2px 3px gray ,-2px -2px 3px gray;
+    box-shadow:2px 2px 3px #E7E7E7 ,-2px -2px 3px #E7E7E7;
     border-radius:10px;
     width:100%;
     padding:15px 80px;
   }
-  @media screen and (max-width: 770px) {
-    .navbar {
-      justify-content: center;
-      margin: 0 auto;
-    }
-    .nav-item {
-      border-bottom: 2px solid #013160;
-    }
-
-    .landing-text {
-        width: 100%;
-        color: white;
-        font-size: larger;
-        margin: 0 auto;
-        padding: 8vh 0;
-      }
-      .landing-section {
-        width:90%
-        justify-content: center;
-      }
-      .form-div {
-        margin: 0 auto 5vh auto;
-      }
-      input{
-        font-size:normal;
-        margin-top:1vh;
-        line-height:1vh;
-      }
-      .middle-para{
-        width:90%;
-      }
-      .middle-sec{
-        width:90%;
-      }
-      .code-img{
-        width:300px;
-        height:200px;
-      }
-      .mid-3{
-        width:90%;
-      }
-      .mid-3-text{
-        width:90%;
-      }
+  .fa-10x{
+    color:white;
   }
+  
   .mid-3-container{
     background-color:#047aed;
     margin:5vh auto;
@@ -307,7 +267,7 @@ input {
     display:flex;
     justify-content:space-evenly;
     width:70%;
-    margin:0 auto;
+    margin:0 auto 5vh auto;
     flex-wrap:wrap;
     align-content: space-evenly;
     align-item:space-evenly;
@@ -325,12 +285,118 @@ input {
     padding:1vh 1vw 2vh 1vw;
     text-align:center;
     border-radius:7px;
-    width:180px;
-    box-shadow:2px 2px 3px gray ,-2px -2px 3px gray;
+    width:160px;
+    box-shadow:2px 2px 3px #E7E7E7 ,-2px -2px 3px #E7E7E7;
   }
 
   .lang:hover{
-    box-shadow:3px 3px 5px gray ,-3px -3px 5px gray;
+    box-shadow:3px 3px 5px #E7E7E7 ,-3px -3px 5px #E7E7E7;
   }
 
-  
+  footer{
+    background-color:#1a88e8;
+    width:100%;
+  }
+
+  .foot-div{
+    display:flex;
+    flex-wrap:wrap;
+    width:80%;
+    margin:0 auto;
+    justify-content:space-evenly;
+    gap:10px;
+  }
+
+  .copyright{
+    color:white;
+    margin:auto 0;
+    padding:5vh 2vw;
+  }
+  .copyright h3{
+    font-size:xx-large;
+    margin:10px auto;
+  }
+  .nav{
+    margin:auto 0;
+    font-size:larger;
+    padding:5vh 2vw;
+  }
+  .social{
+    padding:5vh 2vw;
+  }
+  .fa-2x{
+    color:white;
+    margin:25px 10px;
+    display:inline-block;
+  }
+  .nav p:hover{
+    text-decoration:underline;
+    color:white;
+  }
+  .fa-2x:hover{
+    color:#013160;
+  }
+
+  @media screen and (max-width: 770px) {
+    .navbar {
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .nav-item {
+      border-bottom: 2px solid #013160;
+    }
+
+    .landing-text {
+        width: 100%;
+        color: white;
+        font-size: larger;
+        margin: 0 auto;
+        padding: 8vh 0;
+        text-align:center;
+      }
+      .landing-section {
+        width:90%
+        justify-content: center;
+      }
+      .form-div {
+        margin: 0 auto 5vh auto;
+      }
+      input{
+        font-size:normal;
+        margin-top:1vh;
+        line-height:1vh;
+      }
+      .middle-para{
+        width:90%;
+      }
+      .middle-sec{
+        width:90%;
+      }
+      .code-img{
+        width:300px;
+        height:200px;
+      }
+      .mid-3{
+        width:90%;
+      }
+      .mid-3-text{
+        width:90%;
+        text-align:center;
+        margin:0 auto;
+      }
+      .mid-2-divs{
+        margin:2vh 2vw;
+      }
+      .text-container{
+        margin:-2vh 1vw;
+      }
+      .lang{
+        text-align:center;
+      }
+      .lang-section{
+        width:90%;
+      }
+      .foot-div{
+        width:90%;
+      }
+  }
