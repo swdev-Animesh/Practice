@@ -1,2 +1,1 @@
-# PracticeProjects
-**For Personal Use . For Practicing .
+Making new projects to brush up my skills
