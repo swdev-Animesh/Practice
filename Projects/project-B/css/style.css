@@ -46,3 +46,7 @@ h1 {
   color: red;
   text-align: center;
 }
+
+.bicon:hover {
+  color: rgb(255, 41, 41);
+}
