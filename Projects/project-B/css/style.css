@@ -28,10 +28,21 @@ h1 {
 }
 
 .rotate {
-  transform: rotate(20deg);
+  transform: rotate(22deg);
+  width: 60%;
 }
 
 #title {
-  height: 70vh;
   overflow: hidden;
+  height: 80vh;
+}
+
+#features {
+  margin-top: 5rem;
+  padding: 0 15%;
+}
+.bicon {
+  font-size: 4rem;
+  color: red;
+  text-align: center;
 }
