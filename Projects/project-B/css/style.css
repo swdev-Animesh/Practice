@@ -34,7 +34,6 @@ h1 {
 
 #title {
   overflow: hidden;
-  height: 80vh;
 }
 
 #features {
@@ -43,10 +42,32 @@ h1 {
 }
 .bicon {
   font-size: 4rem;
-  color: red;
+  color: #fc466b;
   text-align: center;
 }
 
 .bicon:hover {
-  color: rgb(255, 41, 41);
+  color: red;
+}
+
+#testimonials {
+  background-color: #fc466b;
+}
+
+.testimonials-image {
+  width: 20%;
+  border-radius: 50%;
+}
+#press {
+  background-color: #fc466b;
+  padding: 2% 10%;
+}
+.logo {
+  width: 20%;
+}
+.carousel-items {
+  padding: 10% 15%;
+}
+.carousel-indicators {
+  margin: auto auto;
 }
