@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: rgb(251, 158, 79);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 158, 79, 1) 23%,
+    rgba(252, 70, 107, 1) 84%
+  );
+}
 .nav-link:hover {
   color: white;
 }
@@ -24,13 +31,18 @@ h1 {
     rgba(251, 158, 79, 1) 23%,
     rgba(252, 70, 107, 1) 84%
   );
-  padding: 3% 15% 0 15%;
+  padding: 3% 15% 5% 15%;
+  position: relative;
+  z-index: 1;
 }
-
+.down-btn {
+  margin-top: 1rem;
+}
 .rotate {
   transform: rotate(22deg);
-  width: 60%;
-  z-index: -1;
+  width: 22%;
+  position: absolute;
+  z-index: 1;
 }
 
 #title {
@@ -38,15 +50,20 @@ h1 {
 }
 
 #features {
-  margin-top: 5rem;
-  padding: 0 15%;
+  position: relative;
+  z-index: 2;
+  margin-top: 3rem;
+  padding: 3% 15%;
+  background-color: white;
 }
 .bicon {
   font-size: 4rem;
   color: #fc466b;
   text-align: center;
 }
-
+i:hover {
+  cursor: pointer;
+}
 .bicon:hover {
   color: red;
 }
@@ -67,13 +84,45 @@ h1 {
 #press {
   background-color: #fc466b;
   padding: 2% 10%;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
 }
 .logo {
   width: 20%;
+}
+.card {
+  border-radius: 15px;
 }
 .carousel-items {
   padding: 10% 15%;
 }
 .carousel-indicators {
   margin: auto auto;
+}
+@media screen and (max-width: 1030px) {
+  .rotate {
+    width: 90%;
+    position: static;
+    transform: rotate(0);
+    padding: 0;
+  }
+  #features {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  #title {
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .logo {
+    width: 40%;
+    margin: 2% 0;
+  }
+  .card {
+    width: 75%;
+  }
+}
+.text-end1 {
+  font-size: 3rem;
 }
