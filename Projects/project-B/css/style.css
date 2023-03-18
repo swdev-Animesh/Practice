@@ -10,6 +10,9 @@ body {
     rgba(252, 70, 107, 1) 84%
   );
 }
+html {
+  scroll-behaviour: scroll;
+}
 .nav-link:hover {
   color: white;
 }
@@ -53,7 +56,7 @@ h1 {
   position: relative;
   z-index: 2;
   margin-top: 3rem;
-  padding: 3% 15%;
+  padding: 6% 15%;
   background-color: white;
 }
 .bicon {
@@ -100,6 +103,9 @@ i:hover {
   margin: auto auto;
 }
 @media screen and (max-width: 1030px) {
+  .testimonials-image {
+    width: 30%;
+  }
   .rotate {
     width: 90%;
     position: static;
@@ -107,7 +113,7 @@ i:hover {
     padding: 0;
   }
   #features {
-    padding-top: 0;
+    padding: 2% 5%;
     margin-top: 0;
   }
   #title {
