@@ -11,14 +11,7 @@ body {
   );
 }
 html {
-  scroll-behaviour: scroll;
-}
-.nav-link:hover {
-  color: white;
-}
-
-.navbar-brand:hover {
-  cursor: pointer;
+  scroll-behavior: smooth;
 }
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -27,13 +20,15 @@ h1 {
   color: white;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
 .container-fluid {
-  background: rgb(251, 158, 79);
-  background: linear-gradient(
-    90deg,
-    rgba(251, 158, 79, 1) 23%,
-    rgba(252, 70, 107, 1) 84%
-  );
   padding: 3% 15% 5% 15%;
   position: relative;
   z-index: 1;
@@ -62,22 +57,12 @@ h1 {
 .bicon {
   font-size: 4rem;
   color: #fc466b;
-  text-align: center;
 }
 i:hover {
   cursor: pointer;
 }
 .bicon:hover {
   color: red;
-}
-
-#testimonials {
-  background: rgb(251, 158, 79);
-  background: linear-gradient(
-    90deg,
-    rgba(251, 158, 79, 1) 23%,
-    rgba(252, 70, 107, 1) 84%
-  );
 }
 
 .testimonials-image {
@@ -101,6 +86,9 @@ i:hover {
 }
 .carousel-indicators {
   margin: auto auto;
+}
+.text-end1 {
+  font-size: 3rem;
 }
 @media screen and (max-width: 1030px) {
   .testimonials-image {
@@ -128,7 +116,4 @@ i:hover {
   .card {
     width: 75%;
   }
-}
-.text-end1 {
-  font-size: 3rem;
 }
