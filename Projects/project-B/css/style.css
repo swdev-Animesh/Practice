@@ -1,3 +1,4 @@
+/* tags selector */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,16 @@ h1 {
   font-size: 3rem;
   color: white;
 }
-
+hr {
+  width: 90%;
+  height: 10px;
+  background-color: white;
+  margin: 0 auto;
+  opacity: 1;
+  border-radius: 5px;
+  border: none;
+}
+/* navbar */
 .nav-link:hover {
   color: white;
 }
@@ -27,7 +37,7 @@ h1 {
 .navbar-brand:hover {
   cursor: pointer;
 }
-
+/* Section after navbar with images and download app buttons */
 .container-fluid {
   padding: 3% 15% 5% 15%;
   position: relative;
@@ -36,6 +46,7 @@ h1 {
 .down-btn {
   margin-top: 1rem;
 }
+/* mobile image of tindog */
 .rotate {
   transform: rotate(22deg);
   width: 22%;
@@ -46,7 +57,7 @@ h1 {
 #title {
   overflow: hidden;
 }
-
+/* feature section */
 #features {
   position: relative;
   z-index: 2;
@@ -54,6 +65,7 @@ h1 {
   padding: 6% 15%;
   background-color: white;
 }
+/* bootstrap icons */
 .bicon {
   font-size: 4rem;
   color: #fc466b;
@@ -64,22 +76,10 @@ i:hover {
 .bicon:hover {
   color: red;
 }
-
+/* carousel section testimonial image */
 .testimonials-image {
   width: 20%;
   border-radius: 50%;
-}
-#press {
-  background-color: #fc466b;
-  padding: 2% 10%;
-  border-top: 6px solid white;
-  border-bottom: 6px solid white;
-}
-.logo {
-  width: 20%;
-}
-.card {
-  border-radius: 15px;
 }
 .carousel-items {
   padding: 10% 15%;
@@ -87,9 +87,27 @@ i:hover {
 .carousel-indicators {
   margin: auto auto;
 }
+/* Our parteners section */
+#press {
+  background-color: #fc466b;
+  padding: 2% 10%;
+}
+/* partners logo */
+.logo {
+  width: 20%;
+}
+/* pricing-card */
+.card {
+  border-radius: 15px;
+}
+/* footer section - call to action section */
 .text-end1 {
   font-size: 3rem;
 }
+#download {
+  padding: 15% 0;
+}
+/* responsive queries */
 @media screen and (max-width: 1030px) {
   .testimonials-image {
     width: 30%;
