@@ -53,16 +53,34 @@
 }
 
 .hidden-nav {
+  height: 100vh;
   width: 100vw;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: $primary-color;
-  transform: translateX(100vw);
+
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
   @include transion_menu;
 
   .hidden-nav-item {
-    display: block;
-    margin: auto 5vh;
+    height: 40px;
+    margin-top: 10px;
     font-size: 1.3rem;
     font-weight: 0;
+    text-align: center;
+    @include transion_menu;
   }
+}
+.trans {
+  transform: translateX(100%);
+}
+.menu_flex {
+  transform: translateX(0);
+  overflow: hidden;
+}
+.blur {
+  backdrop-filter: blur(5px);
 }
