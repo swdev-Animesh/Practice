@@ -60,9 +60,10 @@ footer {
 
 .navbar {
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 0;
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .navbar .nav {
@@ -75,11 +76,40 @@ footer {
   font-weight: lighter;
 }
 
+.navbar .nav .active {
+  color: #ff652f;
+}
+
 .nav-items :hover {
   color: #ff652f;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.menu_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #272727;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .menu-burger {
@@ -91,6 +121,9 @@ footer {
   top: 45px;
   right: 20px;
   background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-burger::after {
@@ -102,6 +135,8 @@ footer {
   width: 40px;
   background-color: #fff;
   border-radius: 2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-burger::before {
@@ -113,6 +148,48 @@ footer {
   width: 40px;
   background-color: #fff;
   border-radius: 2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.open {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open::before {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.open::after {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-burger {
+    display: none;
+  }
+}
+
+.hidden-nav {
+  width: 100vw;
+  opacity: 0.8;
+  background-color: #272727;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden-nav .hidden-nav-item {
+  display: block;
+  margin: auto 5vh;
+  font-size: 1.3rem;
+  font-weight: 0;
 }
 
 body {
