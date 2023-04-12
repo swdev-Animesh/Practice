@@ -1,7 +1,7 @@
 @import "_config.scss";
 @import "home";
 @import "menu";
-
+@import "../../variables";
 body {
   background-color: $primary-color;
   height: 100vh;
