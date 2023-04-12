@@ -490,12 +490,41 @@ input {
       }
       .mid-sec-1{
         padding:3rem 0 3rem 0;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+      }
+      .mid-sec-2{
+        padding:3rem 0 3rem 0;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
       }
       .mid-sec-inner{
+        text-align:center;
+        display:flex;
+        flex-direction:column;
         text-align:center;
       }
       .mid-sec-inner-div-1 {
         text-align:center;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
       }
-      
+      .mid-sec-inner-div-3 h1{
+        width:100%;
+        margin:0 auto;
+      }
+      .mid-sec-inner-div-3,.mid-sec-inner-div-4 {
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+      }
+      .grid-inner{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+      }
   }
