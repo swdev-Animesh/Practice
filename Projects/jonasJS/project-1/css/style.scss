@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-body {
+  height: 100vh;
+  background: rgb(172, 238, 205);
+  background: linear-gradient(
+    180deg,
+    rgb(70, 220, 145) 38%,
+    rgba(146, 231, 186, 1) 65%,
+    rgba(118, 146, 221, 1) 93%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.heading-mid {
+  padding-top: 40vh;
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}

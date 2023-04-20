@@ -1,3 +1,6 @@
+
+//challenge 1
+
 let bmi_mark, bmi_john;
 let mark_height = 1.69;
 let mark_mass = 78;
@@ -14,3 +17,4 @@ if (bmi_mark > bmi_john) {
   markHigherBmi = false;
   console.log(markHigherBmi);
 }
+//challenge 1 end 

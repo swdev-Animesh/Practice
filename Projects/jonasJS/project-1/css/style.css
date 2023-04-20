@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-body {
+  height: 100vh;
+  background: #aceecd;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%, #46dc91), color-stop(65%, #92e7ba), color-stop(93%, #7692dd));
+  background: linear-gradient(180deg, #46dc91 38%, #92e7ba 65%, #7692dd 93%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.heading-mid {
+  padding-top: 40vh;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
