@@ -39,3 +39,9 @@ if (dolphin_score_avg > koalas_score_avg && dolphin_score_avg >= 100) {
 }
 
 //challenge 3 end
+//challenge 4
+let bill = 275;
+let tip = bill >= 50 && bill <= 300 ? 15 : 20;
+tip = (bill * tip) / 100;
+console.log(`the bill is ${bill} and tip is ${tip} and total is ${bill + tip}`);
+//challenge 4 end
