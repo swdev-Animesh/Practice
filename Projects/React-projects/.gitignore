@@ -1,2 +1,3 @@
 01-starting-setup/
-my-app/
+my-app/*
+!my-app/src
