@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ExpenseItem from "./components/ExpenseItem";
+import General from "./components/General";
+import ExpensesInput from "../src/ExpensesInput/ExpensesInput";
 function App() {
   const expenses = [
     {
@@ -24,20 +26,26 @@ function App() {
     },
   ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+      <ExpensesInput></ExpensesInput>
+
+      <General>
         <ExpenseItem
           title={expenses[0].title}
           amount={expenses[0].amount}
@@ -58,8 +66,9 @@ function App() {
           amount={expenses[3].amount}
           date={expenses[3].date}
         ></ExpenseItem>
-      </header>
-      <p>&#169; This is Animesh Tiwari At Work!</p>
+
+        <p>&#169; This is Animesh Tiwari At Work!</p>
+      </General>
     </div>
   );
 }

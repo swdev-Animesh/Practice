@@ -1,20 +1,24 @@
 import "./ExpenseItem.css";
-
+import ExpenseDate from "./ExpenseDate";
+import General from "./General";
+import React, { useState } from "react";
 function ExpenseItem(props) {
   // let dateToday = prompt("what is the date today");
   // let expenseName = prompt("tell on what you spend your money?");
   // let cost = prompt("amount?");
-  return (
-    <div className="expense-item">
-      <div>
-        <div>{props.date.toLocaleString("en-US", { month: "long" })}</div>
-        <div>{props.date.toLocaleString("en-US", { day: "2-digit" })}</div>
-        <div>{props.date.getFullYear()}</div>
-      </div>
 
-      <h2 className="expense-item__description">{props.title}</h2>
+  const [title, setTitle] = useState(props.title);
+
+  function clickHandler() {
+    setTitle("Updated!!");
+  }
+  return (
+    <General className="expense-item">
+      <ExpenseDate date={props.date}></ExpenseDate>
+      <h2 className="expense-item__description">{title}</h2>
       <h2 className="expense-item__price "> {props.amount}</h2>
-    </div>
+      <button onClick={clickHandler}>Change Title</button>
+    </General>
   );
 }
 
