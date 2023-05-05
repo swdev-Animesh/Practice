@@ -2,10 +2,18 @@ import React from "react";
 import "./ExpensesInput.css";
 import ExpensesForm from "./ExpensesForm";
 
-function ExpensesInput() {
+function ExpensesInput(props) {
+  let exObj = {};
+  const saveChildParentExpense = (expenseObject) => {
+    exObj = {
+      ...expenseObject,
+      id: Math.random().toString(),
+    };
+    props.childParentExpense(exObj);
+  };
   return (
     <div className="new-expense">
-      <ExpensesForm />
+      <ExpensesForm childParentExpense={saveChildParentExpense} />
     </div>
   );
 }
