@@ -1,0 +1,17 @@
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modalStyle {
+  border: 1px solid black;
+  z-index: 101;
+  position: fixed;
+  top: 30vh;
+  right: 25%;
+}
