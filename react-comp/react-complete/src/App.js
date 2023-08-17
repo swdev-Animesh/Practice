@@ -20,7 +20,7 @@ function App() {
       amount: 51,
     },
   ];
-
+  // making a comment for seeing git diff option
   return (
     <div className="App">
       <Modal></Modal>
