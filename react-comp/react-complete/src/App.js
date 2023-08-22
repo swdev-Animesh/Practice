@@ -2,6 +2,7 @@
 import "./App.css";
 import Modal from "./modal-components/Modal";
 import ItemRender from "./components/ItemList/ItemRender";
+import ModalBootstrap from "./modal-components/ModalBootstrap";
 function App() {
   const listData = [
     {
@@ -23,7 +24,11 @@ function App() {
   // making a comment for seeing git diff option
   return (
     <div className="App">
+      {/*modal using bootstrap component*/}
+      <ModalBootstrap></ModalBootstrap>
+      {/*modal using js and react and react logic */}
       <Modal></Modal>
+
       <hr />
       <div className="container conatiner-fluid mx-auto text-light text-center">
         Lets Start This Project!
