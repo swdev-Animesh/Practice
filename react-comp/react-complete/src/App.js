@@ -3,6 +3,7 @@ import "./App.css";
 import Modal from "./modal-components/Modal";
 import ItemRender from "./components/ItemList/ItemRender";
 import ModalBootstrap from "./modal-components/ModalBootstrap";
+import AddItem from "./components/AddItem/AddItem";
 function App() {
   const listData = [
     {
@@ -30,6 +31,7 @@ function App() {
       <Modal></Modal>
 
       <hr />
+      <AddItem></AddItem>
       <div className="container conatiner-fluid mx-auto text-light text-center">
         Lets Start This Project!
       </div>

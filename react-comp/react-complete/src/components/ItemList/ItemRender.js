@@ -6,6 +6,7 @@ const ItemRender = (props) => {
   } else {
     date = props.date.toLocaleDateString();
   }
+
   return (
     <div className="row justify-content-evenly bg-secondary container-fluid mx-auto p-1">
       <div className=" col-sm-2 border border-white rounded text-center text-light p-1">
